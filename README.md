@@ -12,8 +12,8 @@ rewrite the complete color scheme based on this set of categories:
 
 |FILE TYPES          | COLOR/FORMATTING
 |--------------------|-----------------
-|Directories         | Bold blue-green
-|Symlinks            | Bold Gray (bold italics pink is orphaned)
+|Directories         | Bold light blue
+|Symlinks            | Bold gray (bold italics pink is orphaned)
 |System files        | Underlined red
 |Diff/Patch          | Bright pink (italics/bold)
 |Files to ignore     | Dark gray

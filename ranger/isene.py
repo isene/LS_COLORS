@@ -101,7 +101,7 @@ class Default(ColorScheme):
                 fg = red
             if context.directory:
                 attr |= bold
-                fg = 75
+                fg = 111
             elif context.executable and not \
                     any((context.media, context.container,
                         context.fifo, context.socket)):
@@ -141,7 +141,7 @@ class Default(ColorScheme):
                 fg = context.bad and red or green
             elif context.directory:
                 attr |= bold
-                fg = 75
+                fg = 111
             elif context.tab:
                 if context.good:
                     bg = cyan
