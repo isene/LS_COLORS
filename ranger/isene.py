@@ -93,9 +93,9 @@ class Default(ColorScheme):
             if context.binaries:
                 fg = 116
             if context.hyperlist:
-                fg = 173
+                fg = 208
             if context.npcfiles:
-                fg = 131
+                fg = 166
             #... to here
             if context.container:
                 fg = red

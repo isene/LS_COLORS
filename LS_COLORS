@@ -88,10 +88,10 @@ STICKY_OTHER_WRITABLE 38;5;255;3;100
 # plain-text {{{2
 .txt                  38;5;228
 # HyperList/woim
-.hl                   38;5;173
-.woim                 38;5;173
+.hl                   38;5;208
+.woim                 38;5;208
 # Amar RPG .npc files
-.npc                  38;5;131
+.npc                  38;5;166
 # markup {{{2
 .etx                  38;5;214
 .info                 38;5;214
