@@ -2,6 +2,7 @@
 #
 
 lscolors_data_dir="${XDG_DATA_HOME:-$HOME/.local/share}"
+ranger_colorscheme_dir="${XDG_DATA_HOME:-$HOME/.config/ranger/colorschemes}"
 
 if dircolors -b LS_COLORS > lscolors.sh && dircolors -c LS_COLORS > lscolors.csh ; then
   if mv -t "$lscolors_data_dir" lscolors.sh lscolors.csh ; then
@@ -17,3 +18,5 @@ For C shell (e.g. ~/.cshrc):
 EOF
   fi
 fi
+
+cp ranger/isene.py "$ranger_colorscheme_dir"
