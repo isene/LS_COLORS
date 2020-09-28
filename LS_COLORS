@@ -354,16 +354,16 @@ STICKY_OTHER_WRITABLE 38;5;255;3;100
 .tfvars               38;5;117
 # orchestration 2}}}
 # html {{{2
-.css                  38;5;142
-.less                 38;5;142
-.sass                 38;5;142
-.scss                 38;5;142
-.htm                  38;5;142
-.html                 38;5;142
-.jhtm                 38;5;142
-.mht                  38;5;142
-.eml                  38;5;142
-.mustache             38;5;142
+.css                  38;5;173
+.less                 38;5;173
+.sass                 38;5;173
+.scss                 38;5;173
+.htm                  38;5;173
+.html                 38;5;173
+.jhtm                 38;5;173
+.mht                  38;5;173
+.eml                  38;5;173
+.mustache             38;5;173
 # }}}
 # java {{{2
 .coffee               38;5;69

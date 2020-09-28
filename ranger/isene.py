@@ -87,7 +87,7 @@ class Default(ColorScheme):
             if context.officefiles:
                 fg = 126
             if context.htmlfiles:
-                fg = 142
+                fg = 173
             if context.pgmfiles:
                 fg = 69
             if context.binaries:
