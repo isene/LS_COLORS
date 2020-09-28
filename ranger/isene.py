@@ -3,6 +3,7 @@
 # Geir Isene's ranger colorscheme - corresponding with the LS_COLORS:
 # <https://github.com/isene/LS_COLORS>
 
+# FIRST DEFINE THE FILE TYPES
 # See: https://github.com/ranger/ranger/blob/master/doc/colorschemes.md
 import ranger.gui.widgets.browsercolumn
 import ranger.gui.context
@@ -13,15 +14,17 @@ ranger.gui.context.CONTEXT_KEYS.append('pdffiles')
 ranger.gui.context.CONTEXT_KEYS.append('officefiles')
 ranger.gui.context.CONTEXT_KEYS.append('htmlfiles')
 ranger.gui.context.CONTEXT_KEYS.append('pgmfiles')
+ranger.gui.context.CONTEXT_KEYS.append('binaries')
 ranger.gui.context.CONTEXT_KEYS.append('hyperlist')
 ranger.gui.context.CONTEXT_KEYS.append('npcfiles')
 
-# Set it to False (the default value)
+# Set to False (the default value)
 ranger.gui.context.Context.textfiles = False
 ranger.gui.context.Context.pdffiles = False
 ranger.gui.context.Context.officefiles = False
 ranger.gui.context.Context.htmlfiles = False
 ranger.gui.context.Context.pgmfiles = False
+ranger.gui.context.Context.binaries = False
 ranger.gui.context.Context.hyperlist = False
 ranger.gui.context.Context.npcfiles = False
 
@@ -36,8 +39,10 @@ def new_hook_before_drawing(fsobject, color_list):
         color_list.append('officefiles')
     if fsobject.extension in ['htm', 'html', 'css', 'sass', 'scss', 'jhtm', 'eml']:
         color_list.append('htmlfiles')
-    if fsobject.extension in ['rb', 'py', 'php', 'java', 'jsp', 'js', 'vb', 'vba', 'pl', 'hs', 'fs']:
+    if fsobject.extension in ['rb', 'py', 'php', 'java', 'jsp', 'js', 'vb', 'vba', 'pl', 'hs', 'fs', '41', 'rpn']:
         color_list.append('pgmfiles')
+    if fsobject.extension in ['7z', 'a', 'bz2', 'gz', 'lz', 'rar', 'tar', 'tgz', 'z', 'zip', 'apk', 'deb', 'rpm', 'jar', 'jar', 'cab', 'pak', 'dmg', 'asc', 'gpg', 'pgp', 'enc', 'pem', 'sig']:
+        color_list.append('binaries')
     if fsobject.extension in ['hl', 'woim']:
         color_list.append('hyperlist')
     if fsobject.extension == 'npc':
@@ -47,6 +52,7 @@ def new_hook_before_drawing(fsobject, color_list):
 
 ranger.gui.widgets.browsercolumn.hook_before_drawing = new_hook_before_drawing
 
+# THEN DEFINE THE COLOR SCHEME
 from ranger.gui.colorscheme import ColorScheme
 from ranger.gui.color import *
 
@@ -73,6 +79,24 @@ class Default(ColorScheme):
                     fg = 171
                 else:
                     fg = 99
+            # Specific file types as defined above...
+            if context.textfiles:
+                fg = 228
+            if context.pdffiles:
+                fg = 128
+            if context.officefiles:
+                fg = 126
+            if context.htmlfiles:
+                fg = 142
+            if context.pgmfiles:
+                fg = 69
+            if context.binaries:
+                fg = 116
+            if context.hyperlist:
+                fg = 173
+            if context.npcfiles:
+                fg = 131
+            #... to here
             if context.container:
                 fg = red
             if context.directory:
@@ -97,22 +121,6 @@ class Default(ColorScheme):
                     fg = white
                 else:
                     fg = red
-            # My set of custom context colors (see plugins/custom_contexts.py)
-            if context.textfiles:
-                fg = 228
-            if context.pdffiles:
-                fg = 128
-            if context.officefiles:
-                fg = 126
-            if context.htmlfiles:
-                fg = 142
-            if context.pgmfiles:
-                fg = 69
-            if context.hyperlist:
-                fg = 173
-            if context.npcfiles:
-                fg = 131
-            # ... to here
             if not context.selected and (context.cut or context.copied):
                 fg = black
                 attr |= bold

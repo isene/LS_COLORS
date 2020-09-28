@@ -340,6 +340,9 @@ STICKY_OTHER_WRITABLE 38;5;255;3;100
 .zig                  38;5;69
 # V
 .v                    38;5;69
+# RPN/HP-41
+.rpn                  38;5;69
+.41                   38;5;69
 
 # binaries {{{2
 # compiled apps for interpreted languages
