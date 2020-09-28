@@ -140,12 +140,14 @@ class Default(ColorScheme):
             if context.hostname:
                 fg = context.bad and red or green
             elif context.directory:
-                fg = blue
+                attr |= bold
+                fg = 75
             elif context.tab:
                 if context.good:
                     bg = cyan
             elif context.link:
-                fg = cyan
+                attr |= bold
+                fg = 246
 
         elif context.in_statusbar:
             attr |= bold
