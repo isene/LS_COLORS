@@ -24,13 +24,25 @@ rewrite the complete color scheme based on this set of categories:
 |PDF and related     | Red-purple
 |Media files/images  | Purple
 |Programming related | Blue
-|Binaries            | Bright teal
+|Binaries            | Bright cyan
 |Executables         | Green
 |Other file types    | White
 
 File types within each category can have different shades of that color.
 
+I use this as a sensible alias for ls in my .zshrc:
+
+```
+alias ls='ls --color=always -FH --group-directories-first'
+```
+
 There is also a corresponding [Ranger](https://ranger.github.io/) color scheme included `isene.py`. This covers only the categories above (no shading of files within a category - with a couple of exceptions) and not all the possible filetypes of the LS_COLORS provided. This will suffice until the Ranger project provides a color scheme that simply parses LS_COLORS instead. To use the isene.py Ranger color scheme, set it in your ranger/rc.conf.
+
+I have also included a linemode plugin for ranger `ranger/plugin_linemode.py`.  Drop this file into your `~/.config/ranger/plugins/` directory and add this line to your ranger rc.conf:
+
+```
+default_linemode classify
+```
 
 # Installation
 Clone this repo and run the install script `install.sh`
