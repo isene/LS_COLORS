@@ -138,7 +138,7 @@ class Default(ColorScheme):
 
         elif context.in_titlebar:
             if context.hostname:
-                fg = context.bad and red or 48
+                fg = context.bad and red or green
             elif context.directory:
                 attr |= bold
                 fg = 111
