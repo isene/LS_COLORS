@@ -87,6 +87,8 @@ STICKY_OTHER_WRITABLE 38;5;255;3;100
 .log                  38;5;224
 # plain-text {{{2
 .txt                  38;5;228
+# book files
+.book                 38;5;228
 # HyperList/woim
 .hl                   38;5;208
 .woim                 38;5;208
