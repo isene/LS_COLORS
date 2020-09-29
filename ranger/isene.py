@@ -39,7 +39,7 @@ def new_hook_before_drawing(fsobject, color_list):
         color_list.append('officefiles')
     if fsobject.extension in ['htm', 'html', 'css', 'sass', 'scss', 'jhtm', 'eml']:
         color_list.append('htmlfiles')
-    if fsobject.extension in ['rb', 'py', 'php', 'java', 'jsp', 'js', 'vb', 'vba', 'pl', 'hs', 'fs', '41', 'rpn']:
+    if fsobject.extension in ['rb', 'py', 'php', 'java', 'jsp', 'js', 'vb', 'vba', 'pl', 'hs', 'fs', 'sh', '41', 'rpn']:
         color_list.append('pgmfiles')
     if fsobject.extension in ['7z', 'a', 'bz2', 'gz', 'lz', 'rar', 'tar', 'tgz', 'z', 'zip', 'apk', 'deb', 'rpm', 'jar', 'jar', 'cab', 'pak', 'dmg', 'asc', 'gpg', 'pgp', 'enc', 'pem', 'sig']:
         color_list.append('binaries')
