@@ -35,5 +35,10 @@ There is also a corresponding [Ranger](https://ranger.github.io/) color scheme i
 # Installation
 Clone this repo and run the install script `install.sh`
 
+# What does it look like?
+Here's a screenshot with three terminals with ranger running in the left terminal and the other two showing the output of ls:
+
+![](img/screenshot.png)
+
 # License
 See [the original repo](https://github.com/trapd00r/LS_COLORS). 
