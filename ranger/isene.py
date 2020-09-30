@@ -76,7 +76,7 @@ class Default(ColorScheme):
                 fg = default
             if context.media:
                 if context.image:
-                    fg = 219
+                    fg = 207
                 else:
                     fg = 135
             # Specific file types as defined above...
