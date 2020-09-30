@@ -26,6 +26,8 @@ class MyLinemode(LinemodeBase):
             return_value += "="
         elif fobj.is_fifo:
             return_value += "|"
+        elif "x" in fobj.get_permission_string():
+            return_value += "*"
         return return_value
 
     def infostring(self, fobj, metadata):

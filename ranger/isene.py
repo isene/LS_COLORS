@@ -105,7 +105,7 @@ class Default(ColorScheme):
             elif context.executable and not \
                     any((context.media, context.container,
                         context.fifo, context.socket)):
-                fg = 48
+                fg = 46
             if context.socket:
                 fg = 196
             if context.fifo or context.device:
