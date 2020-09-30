@@ -35,7 +35,7 @@ def new_hook_before_drawing(fsobject, color_list):
         color_list.append('textfiles')
     if fsobject.extension in ['pdf', 'PDF', 'ps', 'djvu', 'mobi', 'epub']:
         color_list.append('pdffiles')
-    if fsobject.extension in ['odt', 'odb', 'rtf', 'doc', 'docx', 'dotx' 'odp', 'ppt', 'pptx', 'pps', 'csv', 'ods', 'xls', 'xlsx', 'pages', 'numers', 'key', 'pez']:
+    if fsobject.extension in ['odt', 'odb', 'rtf', 'doc', 'docx', 'dotx', 'odp', 'ppt', 'pptx', 'pps', 'csv', 'ods', 'xls', 'xlsx', 'pages', 'numers', 'key', 'pez']:
         color_list.append('officefiles')
     if fsobject.extension in ['htm', 'html', 'css', 'sass', 'scss', 'jhtm', 'eml']:
         color_list.append('htmlfiles')
