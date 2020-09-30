@@ -136,34 +136,34 @@ STICKY_OTHER_WRITABLE 38;5;255;3;100
 .mobi                 38;5;207
 .epub                 38;5;207
 # words {{{3
-.docm                 38;5;199
-.doc                  38;5;199
-.docx                 38;5;199
-.odb                  38;5;199
-.odt                  38;5;199
-.rtf                  38;5;199
+.docm                 38;5;211
+.doc                  38;5;211
+.docx                 38;5;211
+.odb                  38;5;211
+.odt                  38;5;211
+.rtf                  38;5;211
 # presentation {{{3
-.odp                  38;5;198
-.pps                  38;5;198
-.ppt                  38;5;198
-.pptx                 38;5;198
+.odp                  38;5;212
+.pps                  38;5;212
+.ppt                  38;5;212
+.pptx                 38;5;212
 #   Powerpoint show
-.ppts                 38;5;198
+.ppts                 38;5;212
 #   Powerpoint with enabled macros
-.pptxm                38;5;198
+.pptxm                38;5;212
 #   Powerpoint show with enabled macros
-.pptsm                38;5;198
+.pptsm                38;5;212
 # spreadsheet {{{3
-.csv                  38;5;197
-.tsv                  38;5;197
+.csv                  38;5;210
+.tsv                  38;5;210
 #   Open document spreadsheet
-.ods                  38;5;197
-.xla                  38;5;197
+.ods                  38;5;210
+.xla                  38;5;210
 #   Excel spreadsheet
-.xls                  38;5;197
-.xlsx                 38;5;197
+.xls                  38;5;210
+.xlsx                 38;5;210
 #   Excel spreadsheet with macros
-.xlsxm                38;5;197
+.xlsxm                38;5;210
 #   Excel module
 .xltm                 38;5;197
 .xltx                 38;5;197

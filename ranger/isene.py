@@ -85,7 +85,7 @@ class Default(ColorScheme):
             if context.pdffiles:
                 fg = 207
             if context.officefiles:
-                fg = 198
+                fg = 211
             if context.htmlfiles:
                 fg = 173
             if context.pgmfiles:
