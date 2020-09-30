@@ -76,20 +76,20 @@ class Default(ColorScheme):
                 fg = default
             if context.media:
                 if context.image:
-                    fg = 171
+                    fg = 219
                 else:
-                    fg = 99
+                    fg = 135
             # Specific file types as defined above...
             if context.textfiles:
                 fg = 228
             if context.pdffiles:
-                fg = 128
+                fg = 207
             if context.officefiles:
-                fg = 126
+                fg = 198
             if context.htmlfiles:
                 fg = 173
             if context.pgmfiles:
-                fg = 69
+                fg = 75
             if context.binaries:
                 fg = 116
             if context.hyperlist:

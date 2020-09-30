@@ -17,12 +17,16 @@ class MyLinemode(LinemodeBase):
     name = "classify"
 
     def filetitle(self, fobj, metadata):
+        return_value = fobj.relative_path
         if fobj.is_directory:
-            return(fobj.relative_path + "/")
+            return_value += "/"
         elif fobj.is_link:
-            return(fobj.relative_path + "@")
-        else:
-            return(fobj.relative_path)
+            return_value += "@"
+        elif fobj.is_socket:
+            return_value += "="
+        elif fobj.is_fifo:
+            return_value += "|"
+        return return_value
 
     def infostring(self, fobj, metadata):
         raise NotImplementedError
