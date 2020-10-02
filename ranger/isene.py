@@ -114,7 +114,7 @@ class Default(ColorScheme):
                     attr |= bold
             if context.link:
                 attr |= bold
-                fg = context.good and 246 or 212
+                fg = context.good and 248 or 212
             if context.tag_marker and not context.selected:
                 attr |= bold
                 if fg in (red, magenta):
