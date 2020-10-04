@@ -31,7 +31,7 @@ ranger.gui.context.Context.npcfiles = False
 OLD_HOOK_BEFORE_DRAWING = ranger.gui.widgets.browsercolumn.hook_before_drawing
 
 def new_hook_before_drawing(fsobject, color_list):
-    if fsobject.extension in ['txt', 'md', 'markdown', 'tex', 'book', 'rss', 'log', 'ini', 'conf' ]:
+    if fsobject.extension in ['txt', 'md', 'markdown', 'tex', 'book', 'rss', 'log', 'ini', 'conf', 'cfg', 'cf' ]:
         color_list.append('textfiles')
     if fsobject.extension in ['pdf', 'PDF', 'ps', 'djvu', 'mobi', 'epub']:
         color_list.append('pdffiles')

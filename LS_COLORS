@@ -178,6 +178,7 @@ STICKY_OTHER_WRITABLE 38;5;255;3;100
 # configs {{{2
 *config               38;5;150
 *cfg                  38;5;150
+*cf                   38;5;150
 *conf                 38;5;150
 *rc                   38;5;150
 *authorized_keys      38;5;150
