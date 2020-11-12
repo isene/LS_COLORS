@@ -35,6 +35,8 @@ I use this as a sensible alias for ls in my .zshrc:
 ```
 alias ls='ls --color=always -FH --group-directories-first'
 ```
+For a consistent color experience between your command line and a curses file
+manager, you may want to take a look at [RTFM](https://github.com/isene/RTFM).
 
 There is also a corresponding [Ranger](https://ranger.github.io/) color scheme included `isene.py`. This covers only the categories above (no shading of files within a category - with a couple of exceptions) and not all the possible filetypes of the LS_COLORS provided. This will suffice until the Ranger project provides a color scheme that simply parses LS_COLORS instead. To use the isene.py Ranger color scheme, set it in your ranger/rc.conf.
 
