@@ -49,6 +49,9 @@ default_linemode classify
 # Installation
 Clone this repo and run the install script `install.sh`
 
+# Note for fish users
+Users of the fish shell should source the resulting lscolors.csh file in their config.fish.
+
 # What does it look like?
 Here's a screenshot with three terminals with ranger running in the left terminal and the other two showing the output of ls:
 
