@@ -1,4 +1,10 @@
 # LS_COLORS
+
+[![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![License](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://unlicense.org/)
+[![GitHub stars](https://img.shields.io/github/stars/isene/LS_COLORS.svg)](https://github.com/isene/LS_COLORS/stargazers)
+[![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
+
 This is a color scheme for your terminal, suitable to use as your `LS_COLORS`
 environment variable. Most of the colors use the extended color map, described
 in the ECMA-48 document; in other words, you'll need a terminal with
