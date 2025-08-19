@@ -6,6 +6,7 @@
 [![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
 
 <img src="img/ls_colors_logo.svg" align="left" width="150" height="150" alt="LS_COLORS Logo">
+<br clear="left"/>
 
 This is a color scheme for your terminal, suitable to use as your `LS_COLORS`
 environment variable. Most of the colors use the extended color map, described
