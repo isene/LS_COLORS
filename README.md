@@ -1,3 +1,5 @@
+<img src="img/ls_colors_logo.svg" align="left" width="150" height="150" alt="LS_COLORS Logo">
+
 # LS_COLORS
 
 [![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
