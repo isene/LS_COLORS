@@ -19,4 +19,5 @@ EOF
   fi
 fi
 
-cp -v ranger/isene.py "$ranger_colorscheme_dir"
+mkdir -pv "$ranger_colorscheme_dir"
+cp -v ranger/isene.py "$ranger_colorscheme_dir/isene.py"
